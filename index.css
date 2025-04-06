@@ -1,13 +1,15 @@
+html {
+    overflow: hidden; height: 100%; min-height: 100%; }
 body { 
     background-color: black; font-size: 12; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    max-height: 480px; width: 320px; }
+    overflow: hidden; height: 100%; min-height: 100%; }
 a {
     color: white; }
 header {
-    display: flex; justify-content: center;
-    background-image:linear-gradient(to right,#051A87,#1A798D); height: 64px; width: 320px; }
+    display: flex; justify-content: center; position: sticky; top: 0;
+    background-image:linear-gradient(to right,#051A87,#1A798D); height: 64px; }
 footer {
-    display: flex; justify-content: center; position: sticky; bottom: 0; width: 100%;
+    display: flex; justify-content: center; position: sticky; bottom: 10; width: 100%;
     background-image:linear-gradient(to right,#051A87,#1A798D); height: 32px; }
 nav {
     display: flex; justify-content: center; width: 320px; }
@@ -22,8 +24,8 @@ td:hover {
 td #current {
     background-color: black; }
 main {
-    display: flex; justify-content: center; padding: 2% 5%; color: white; }
+    display: flex; justify-content: center; padding: 2% 5%; color: white; height: 100%; min-height: 100%; }
 .scrollable {
-    height: 384px;
+    height: 68vh;
     overflow-y: auto;
 }
